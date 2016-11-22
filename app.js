@@ -3,17 +3,12 @@
  */
 
 
-const myHeading = document.getElementById('myHeading');
-const subheading = document.getElementById('subheading');
+const myHeading = document.getElementsByTagName('h1')[0];
 const myButton  = document.getElementById('myButton');
-const myButton2 = document.getElementById('myButton2');
 const myTextInput = document.getElementById('myTextInput');
-const myTextInput2 = document.getElementById('myTextInput2');
+
 
 myButton.addEventListener('click', () => {
     myHeading.style.color = myTextInput.value;
 });
 
-myButton2.addEventListener('click', () => {
-    subheading.style.color = myTextInput2.value;
-})
