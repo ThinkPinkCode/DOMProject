@@ -19,6 +19,7 @@ toggleList.addEventListener('click', () => {
 
 descriptionButton.addEventListener('click', () => {
     descriptionP.innerHTML = descriptionInput.value + ':';
+    descriptionInput.value='';
 });
 
 addItemButton.addEventListener('click', () => {
@@ -33,4 +34,5 @@ addItemButton.addEventListener('click', () => {
     let li = document.createElement('li');
     li.textContent = addItemInput.value;
     ul.appendChild(li);
+    addItemInput.value= '';
 });
